@@ -2,4 +2,4 @@
 
 _Institute of Software Engineering_
 
-[GitHub Logo](/assets/man.gif)
+![GitHub Logo](assets/man.gif)
