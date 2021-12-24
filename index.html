@@ -6,90 +6,318 @@
 <!--Document Metadata-->
 <head>
     <title>Ramindu Abeygunawardane</title>
-    <link href="assets/icon/icon.jpg" rel="icon">
+    <link href="assets/icon/myIcon.png" rel="icon" sizes="any">
+    <link href="assets/style/normalize.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@383&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style/fontawesome_6.0.0/css/all.css">
     <meta content="Ramindu, Scorpion, RAS" name="keywords">
     <meta content="Testing" name="description">
     <meta content="width=device-width initial-scale=1" name="viewport">
     <meta charset="UTF-8">
     <meta content="#2874A6" name="theme-color">
+    <style>
+        /*Header*/
+        header{
+            background-color: #161616;
+            position: fixed;
+            z-index: 10;
+            width: 100vw;
+            height: 100px;
+        }
+        header img{
+            color: white;
+            position: relative;
+            top: -2px;
+            width: 200px;
+        }
+        header ul{
+            position: absolute;
+            margin: 39px;
+            top: 0;
+            left: 175px;
+            list-style: none;
+        }
+        header ul li{
+            display: inline-block;
+            margin-right: 50px;
+        }
+        header ul li a{
+            position: relative;
+            display: inline;
+            margin: 0;
+            color: white;
+            font-size: 15px;
+            font-family: 'Roboto'/*'Raleway'*/, sans-serif;
+        }
+        header ul li a:hover{
+            cursor: pointer;
+            color: #ffdd00;
+            transition-duration: 700ms;
+            transition-property: color;
+        }
+        header a{
+            position: absolute;
+            margin: 40px;
+            cursor: pointer;
+            color: white;
+            font-size: 18px;
+            font-family: 'Roboto'/*'Signika'*/, sans-serif;
+            display: inline;
+            text-decoration: none;
+            top: 0;
+            right: 10px;
+        }
+
+
+        #left_side{
+            position: fixed;
+            left: 40px;
+            top: 0;
+            height: 100%;
+            padding: 5rem 0;
+            width: 70px;
+        }
+        #left_side nav{
+            position: absolute;
+            top: 100px;
+            bottom: 250px;
+            width: 30px;
+            left: -15px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+        }
+        #left_side nav ul{
+            position: absolute;
+            list-style: none;
+            height: 33vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        #left_side nav ul li{
+            position: relative;
+            height: calc(100%/6);
+            width: 100%;
+            font-size: 27px;
+            display: flex;
+            align-items: center;
+        }
+        #left_side nav ul li a{
+            color: white;
+        }
+        #left_side nav ul li a:hover{
+            cursor: pointer;
+            color: #ffd500;
+            transition-duration: 700ms;
+            transition-property: color;
+        }
+        /*#left_side nav section{
+            position: relative;
+            left: 23px;
+            top: 35vh;
+            margin: 0 0 15px 0;
+            display: inline-block;
+        }
+        #left_side nav img{
+            width: 27px;
+        }*/
+        #left_side>section{
+            background-color: rgba(255,255,255,.4);
+            position: relative;
+            left: 36px;
+            width: 1.5px;
+            height: 20%;
+        }
+        #left_side>section:nth-child(1){
+            top: 3vh;
+        }
+        #left_side>section:nth-child(3){
+            top: 38.5vh;
+        }
+
+
+        #right_side{
+            position: fixed;
+            z-index: 75;
+            top: 52%;
+            right: 3.575rem;
+            width: 2px;
+            height: 30.125rem;
+            -webkit-transform: translate(0,-50%);
+            -ms-transform: translate(0,-50%);
+            transform: translate(0,-50%);
+            border-radius: 0.3125rem;
+            background-color: white;
+        }
+        #right_side span {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            display: block;
+            height: 100%;
+            -webkit-transition: -webkit-transform 1s;
+            transition: -webkit-transform 1s;
+            transition: transform 1s;
+            transition: transform 1s,-webkit-transform 1s;
+            -webkit-transform: scaleY(0);
+            -ms-transform: scaleY(0);
+            transform: scaleY(0);
+            -webkit-transform-origin: top;
+            -ms-transform-origin: top;
+            transform-origin: top;
+            border-radius: 0.3125rem;
+            background-color: #ffc800/*#cf000f*/;
+        }
+        /*::-webkit-scrollbar {
+             display: none;
+        }*/
+
+        body::-webkit-scrollbar {
+            width: 7px;               /* width of the entire scrollbar */
+        }
+        body::-webkit-scrollbar-track {
+            background: #161616;        /* color of the tracking area */
+        }
+        body::-webkit-scrollbar-thumb {
+            background-color: #ffc800;    /* color of the scroll thumb */
+            border-radius: 20px;       /* roundness of the scroll thumb */
+            border: 1px solid #161616;  /* creates padding around scroll thumb */
+        }
+
+        #main_body{
+            background-color: /*#343a40*/#282727;
+            position: relative;
+        }
+
+        /*Home*/
+        #home{
+            position: relative;
+            height: 101vh;
+            width: 99.6vw;
+            background-image: url("assets/background/home.jpg");
+            background-size: cover;
+        }
+        #home section{
+            position: absolute;
+            top: 280px;
+            left: 13vw;
+        }
+        #home section p:nth-child(1){
+            color: white;
+            position: relative;
+            font-family: 'Signika', sans-serif;
+            font-style: normal;
+            font-size: 18px;
+            margin: 3px auto 3px auto;
+        }
+        #home section p:nth-child(2){
+            color: white;
+            font-family: Audiowide;
+            font-size: 90px;
+            position: relative;
+            margin: 0;
+        }
+        #home section p:nth-child(3){
+            color: rgba(255,255,255,.7);
+            font-family: 'Signika', sans-serif;
+            font-size: 17px;
+            position: relative;
+            width: 370px;
+            margin-top: 30px;
+            line-height: 28px;
+        }
+        /*#home img{
+            position: relative;
+            top: 3px;
+            left: 0;
+            width: 100%;
+            object-fit: cover;
+            will-change: transform;
+            vertical-align: middle;
+            border-style: none;
+        }*/
+
+        /*Footer*/
+        footer{
+            /*background-color: #ffc800;*/
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100vw;
+            height: 100px;
+        }
+        footer p{
+            position: absolute;
+            color: white;
+            margin: 39px;
+            left: 20px;
+            font-size: 15px;
+            font-family: 'Roboto', sans-serif;
+        }
+        footer ul{
+            position: absolute;
+            margin: 39px 5px 39px 5px;
+            top: 0;
+            right: 35px;
+            list-style: none;
+        }
+        footer ul li{
+            display: inline-block;
+            margin-right: 20px;
+            color: white;
+            font-size: 15px;
+            font-family: 'Roboto', sans-serif;
+        }
+        footer ul li :hover{
+            cursor: pointer;
+            color: #ffdd00;
+        }
+    </style>
 </head>
 <body>
 <!--Header-->
 <header>
-    <hr>
     <section>
-        <img src="" alt="">
+        <img src="assets/logo/ramindu.png" alt="">
         <map name="">
             <area shape="" coords="" href="" alt="">
         </map>
     </section>
     <nav>
         <ul>
-            <li>HOME</li>
-            <li>ABOUT</li>
-            <li>PROJECTS</li>
-            <li>EDUCATION</li>
-            <li>TESTIMONIALS</li>
-            <li>BLOG</li>
-            <li>CONTACT</li>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#education">EDUCATION</a></li>
+            <li><a href="#testimonials">TESTIMONIALS</a></li>
+            <li><a href="#blog">BLOG</a></li>
+            <li><a href="#contact">CONTACT</a></li>
         </ul>
     </nav>
     <a href="tel:+94769807626">+94 76 980 7626</a>
-    <hr>
 </header>
-<!--Left Side-->
-<section>
-    <nav>
-        <!--Facebook-->
-        <section>
-            <img src="" alt="">
-            <map name="">
-                <area shape="" coords="" href="" alt="">
-            </map>
-        </section>
-        <!--Twitter-->
-        <section>
-            <img src="" alt="">
-            <map name="">
-                <area shape="" coords="" href="" alt="">
-            </map>
-        </section>
-        <!--Instagram-->
-        <section>
-            <img src="" alt="">
-            <map name="">
-                <area shape="" coords="" href="" alt="">
-            </map>
-        </section>
-        <!--LinkedIn-->
-        <section>
-            <img src="" alt="">
-            <map name="">
-                <area shape="" coords="" href="" alt="">
-            </map>
-        </section>
-    </nav>
-</section>
 <!--Main Body-->
-<main>
+<main id="main_body">
     <!--HOME-->
-    <section>
-        <hr>
+    <section id="home">
         <img src="" alt="">
         <section>
-            <h5>Full Stack Developer</h5>
-            <img src="" alt="">
-            <pre>
+            <p>Full Stack Developer</p>
+            <p>RAMINDU</p>
+            <p>
                 Working with client and community, we deliver
                 masterplans that create vibrant new places and
                 spaces, attract people, and encourage.
-            </pre>
+            </p>
         </section>
-        <hr>
     </section>
     <!--ABOUT-->
-    <section>
-        <hr>
+    <section id="about">
         <h1>About Me</h1>
         <section>
             <section>
@@ -99,7 +327,7 @@
                     Age: 21 Years           Nationality: Sri Lankan
                     Freelance: Available    Address: Galle
                     Phone: +94769807626     Email: raminduanjana@gmail.com
-                    Skype: ramindu.abey     Langages: English, Sinhalese
+                    Skype: ramindu.abey     Languages: English, Sinhalese
                 </pre>
             </section>
             <section>
@@ -112,10 +340,9 @@
 
             </section>
         </section>
-        <hr>
     </section>
     <!--PROJECTS-->
-    <section>
+    <section id="projects">
         <hr>
         <img src="" alt="">
         <section>
@@ -125,7 +352,7 @@
         <hr>
     </section>
     <!--EDUCATION-->
-    <section>
+    <section id="education">
         <hr>
         <section>
             <h1>Education & Experience</h1>
@@ -149,7 +376,7 @@
         <hr>
     </section>
     <!--TESTIMONIALS-->
-    <section>
+    <section id="testimonials">
         <hr>
         <section>
             <h1><pre>
@@ -164,7 +391,7 @@
         <hr>
     </section>
     <!--BLOG-->
-    <section>
+    <section id="blog">
         <hr>
         <h1>Recent News</h1>
         <section>
@@ -179,7 +406,7 @@
         <hr>
     </section>
     <!--CONTACT-->
-    <section>
+    <section id="contact">
         <hr>
         <section>
             <h1>Contact</h1>
@@ -228,14 +455,80 @@
         <hr>
     </section>
 </main>
-<!--Right Side-->
-<section>
-<!--Styled Scroll Bar & Progress Bar-->
+<!--Left Side-->
+<section id="left_side">
+    <section></section>
+    <nav>
+        <ul><!--Instagram-->
+            <li><a href="https://www.instagram.com/_r.a.m.i.n.d.u_/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <!--GitHub-->
+            <li><a href="https://github.com/RaminduA" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+            <!--LinkedIn-->
+            <li><a href="https://lk.linkedin.com/in/ramindu-abeygunawardane-ab206a213" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <!--Facebook-->
+            <li><a href="https://www.facebook.com/RAS7262344/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <!--Twitter-->
+            <li><a href="https://twitter.com/RaminduAbey" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+            <!--WhatsApp-->
+            <li><a href="https://wa.me/94769807626?text=Hey Ramindu" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+        </ul>
+
+        <!--
+        &lt;!&ndash;Instagram&ndash;&gt;
+        <section>
+            <img src="assets/logo/instagram.png" alt="">
+            <map name="">
+                <area shape="" coords="" href="" alt="">
+            </map>
+        </section>
+        &lt;!&ndash;GitHub&ndash;&gt;
+        <section>
+            <img src="assets/logo/github.png" alt="">
+            <map name="">
+                <area shape="" coords="" href="" alt="">
+            </map>
+        </section>
+        &lt;!&ndash;LinkedIn&ndash;&gt;
+        <section>
+            <img src="assets/logo/linkedin.png" alt="">
+            <map name="">
+                <area shape="" coords="" href="" alt="">
+            </map>
+        </section>
+        &lt;!&ndash;Facebook&ndash;&gt;
+        <section>
+            <img src="assets/logo/facebook.png" alt="">
+            <map name="">
+                <area shape="" coords="" href="" alt="">
+            </map>
+        </section>
+        &lt;!&ndash;Twitter&ndash;&gt;
+        <section>
+            <img src="assets/logo/twitter.png" alt="">
+            <map name="">
+                <area shape="" coords="" href="" alt="">
+            </map>
+        </section>
+        &lt;!&ndash;WhatsApp&ndash;&gt;
+        <section>
+            <img src="assets/logo/whatsapp.png" alt="">
+            <map name="">
+                <area shape="" coords="" href="" alt="">
+            </map>
+        </section>
+        -->
+    </nav>
+    <section></section>
 </section>
+<!--Right Side-->
+<div id="right_side">
+<!--Styled Scroll Bar & Progress Bar-->
+    <span style="transform: scaleY(0.125);"></span>
+</div>
 <!--Footer-->
 <footer>
     <!--Copy Rights-->
-    <p><small>©Scorpion. 2021</small></p>
+    <p>©Scorpion. 2021</p>
     <nav>
         <ul>
             <li>ENG</li>
