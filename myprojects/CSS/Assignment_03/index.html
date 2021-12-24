@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Assignment 03</title>
+    <link rel="stylesheet" href="assets/styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Signika:wght@300&display=swap" rel="stylesheet">
+    <style>
+        #outer_circle{
+            position: fixed;
+            z-index: 10;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 300px;
+            width: 300px;
+            margin: auto;
+            border: 20px solid #BA9284;
+            border-radius: 100%;
+        }
+        #inner_circle{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 260px;
+            width: 260px;
+            margin: auto;
+            border: 20px solid #FF1900;
+            border-radius: 100%;
+        }
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        .content_bg{
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            background-color: white;
+        }
+        .content{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 260px;
+            height: 260px;
+            border-radius: 100%;
+        }
+        #C01{
+            background-color: #943F7B;
+        }
+        #C02{
+            background-color: #1c98bd;
+        }
+        #C03{
+            background-color: #FD6452;
+        }
+        .content>p{
+            position: absolute;
+            display: inline;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            font-size: 30px;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            font-weight: bold;
+        }
+        #C01>p{
+            width: 68px;
+            height: 33px;
+        }
+        #C02>p{
+            width: 163px;
+            height: 31px;
+        }
+        #C03>p{
+            width: 140px;
+            height: 140px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<section id="outer_circle">
+    <section id="inner_circle">
+    </section>
+</section>
+<section class="content_bg">
+    <section class="content" id="C01">
+        <p>Hello</p>
+    </section>
+</section>
+<section class="content_bg">
+    <section class="content" id="C02">
+        <p>Welcome To</p>
+    </section>
+</section>
+<section class="content_bg">
+    <section class="content" id="C03">
+        <p>Institute of Software Engineering</p>
+    </section>
+</section>
+</body>
+</html>
