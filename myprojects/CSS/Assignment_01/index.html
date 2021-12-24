@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -138,4 +139,146 @@
 <section class="middle" id="middle_top"></section>
 <section class="middle" id="middle_bottom"></section>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Assignment 01</title>
+    <link rel="stylesheet" href="assets/styles/normalize.css">
+    <style>
+        [class=main]{
+            position: absolute;
+            width: 50vw;
+            height: 50vh;
+        }
+        [class=main]:nth-child(1){
+            background-color: red;
+            top: 0;
+            left: 0;
+        }
+        [class=main]:nth-child(2){
+            background-color: green;
+            top: 0;
+            right: 0;
+        }
+        [class=main]:nth-child(3){
+            background-color: orange;
+            bottom: 0;
+            left: 0;
+        }
+        [class=main]:nth-child(4){
+            background-color: hotpink;
+            bottom: 0;
+            right: 0;
+        }
+        [class=corner]{
+            position: absolute;
+            background-color: white;
+            height: 13.333vw;
+            width: 13.333vw;
+        }
+        [class=main]:nth-child(1)>[class=corner]{
+            border-bottom-right-radius: 100%;
+            top: 0;
+            left: 0;
+        }
+        [class=main]:nth-child(2)>[class=corner]{
+            border-bottom-left-radius: 100%;
+            top: 0;
+            right: 0;
+        }
+        [class=main]:nth-child(3)>[class=corner]{
+            border-top-right-radius: 100%;
+            bottom: 0;
+            left: 0;
+        }
+        [class=main]:nth-child(4)>[class=corner]{
+            border-top-left-radius: 100%;
+            bottom: 0;
+            right: 0;
+        }
+        [class=center]{
+            margin: auto;
+            position: absolute;
+            background-color: white;
+            height: 16.667vw;
+            width: 16.667vw;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        [class=inside]{
+            margin: auto;
+            position: absolute;
+            background-color: red;
+            height: 7vw;
+            width: 7vw;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        body > [class=center] [class=inside]{
+            border-radius: 100%;
+            height: 10vw;
+            width: 10vw;
+        }
+        [class=main] [class=center]{
+            border-radius: 100%;
+        }
+        [class=middle]{
+            left: 0;
+            right: 0;
+            margin: auto;
+            position: absolute;
+            background-color: white;
+            height: 8vw;
+            width: 16vw;
+        }
+        #middle_top{
+            top: 0;
+            border-bottom-left-radius: 8vw;
+            border-bottom-right-radius: 8vw;
+        }
+        #middle_bottom{
+            bottom: 0;
+            border-top-left-radius: 8vw;
+            border-top-right-radius: 8vw;
+        }
+    </style>
+</head>
+<body>
+<section class="main">
+    <section class="corner"></section>
+    <section class="center">
+        <section class="inside"></section>
+    </section>
+</section>
+<section class="main">
+    <section class="corner"></section>
+    <section class="center">
+        <section class="inside"></section>
+    </section>
+</section>
+<section class="main">
+    <section class="corner"></section>
+    <section class="center">
+        <section class="inside"></section>
+    </section>
+</section>
+<section class="main">
+    <section class="corner"></section>
+    <section class="center">
+        <section class="inside"></section>
+    </section>
+</section>
+<section class="center">
+    <section class="inside"></section>
+</section>
+<section class="middle" id="middle_top"></section>
+<section class="middle" id="middle_bottom"></section>
+</body>
+>>>>>>> 9bbe8c00fa2342d6876524f145fda6b49a4c116b
 </html>
