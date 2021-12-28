@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Animations Case 02</title>
+    <link rel="stylesheet" href="assets/styles/normalize.css">
+    <style>
+        body{
+            background-color: #161616;
+        }
+        main{
+            border: 5px solid #3d3b3b;
+            width: 1200px;
+            height: 700px;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            overflow: hidden;
+        }
+        section{
+            height: 100%;
+            width: 400%;
+            display: flex;
+            position: relative;
+            left: 0;
+            animation-name: myFrame;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        div{
+            width: 100%;
+        }
+        div:nth-child(1){
+            background-image: url("assets/images/01.jpg");
+            background-size: cover;
+            position: center;
+        }
+        div:nth-child(2){
+            background-image: url("assets/images/02.jpg");
+            background-size: cover;
+            position: center;
+        }
+        div:nth-child(3){
+            background-image: url("assets/images/03.webp");
+            background-size: cover;
+            position: center;
+        }
+        div:nth-child(4){
+            background-image: url("assets/images/04.jpg");
+            background-size: cover;
+            position: center;
+        }
+        @keyframes myFrame {
+            0%,10%{
+                left: 0;
+            }
+            30%,40%{
+                left: -100%;
+            }
+            60%,70%{
+                left: -200%;
+            }
+            90%,100%{
+                left: -300%;
+            }
+        }
+    </style>
+</head>
+<body>
+<main>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</main>
+
+</body>
+</html>

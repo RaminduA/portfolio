@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Transitions Case 02</title>
+    <link rel="stylesheet" href="assets/styles/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Signika:wght@400&display=swap" rel="stylesheet">
+    <style>
+        /*section{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 300px;
+            height: 300px;
+            border: 20px solid grey;
+            border-top: 20px solid red;
+            background-color: #1B57A3;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: rotate(0deg);
+            transition-property: transform;
+            transition-duration: 2s;
+        }
+        section:hover{
+            transform: rotate(360deg);
+            transition-property: transform;
+            transition-duration: 2s;
+        }
+        section:hover h1{
+            transform: rotate(-360deg);
+            transition-property: transform;
+            transition-duration: 2s;
+        }
+        section>h1{
+            color: white;
+            font-size: 32px;
+            font-family: 'Roboto', sans-serif;
+            display: inline;
+            transform: rotate(0deg);
+            transition-property: transform;
+            transition-duration: 2s;
+        }*/
+        section {
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+            background-color: #1b57a3;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+        section::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border: 20px solid grey;
+            border-top: 20px solid red;
+            border-radius: 100%;
+            transform: rotate(0deg);
+            transition-property: transform;
+            transition-duration: 2s;
+        }
+        section:hover::after{
+            cursor: pointer;
+            transform: rotate(360deg);
+            transition-property: transform;
+            transition-duration: 2s;
+        }
+        section>h1 {
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: max-content;
+            height: max-content;
+            color: white;
+            font-size: 30px;
+            font-family: 'Roboto', sans-serif;
+            z-index: 5;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <h1>RWAD</h1>
+</section>
+</body>
+</html>
