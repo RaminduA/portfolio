@@ -152,7 +152,6 @@
             height: 100%;
             -webkit-transition: -webkit-transform 1s;
             transition: -webkit-transform 1s;
-            transition: transform 1s;
             transition: transform 1s,-webkit-transform 1s;
             -webkit-transform: scaleY(0);
             -ms-transform: scaleY(0);
@@ -180,12 +179,16 @@
             background-color: /*#343a40*/#282727;
             position: relative;
         }
+        #main_body>section{
+            background-color: /*#343a40*/#282727;
+            position: relative;
+            width: 99.6vw;
+        }
 
         /*Home*/
         #home{
             position: relative;
             height: 101vh;
-            width: 99.6vw;
             background-image: url("assets/background/home.jpg");
             background-size: cover;
         }
@@ -218,6 +221,138 @@
             margin-top: 30px;
             line-height: 28px;
         }
+
+        /*#about{
+            position: relative;
+            background-color: #161A1D;
+            color: white;
+            margin: 0;
+            height: 200vh;
+            font-family: 'Roboto', sans-serif;
+        }
+        #about>h1{
+            position: relative;
+            display: inline;
+            font-size: 50px;
+            top: 115px;
+            left: 313px;
+            font-weight: normal;
+        }
+        #about>section{
+            position: relative;
+        }
+        #about_info{
+            width: 100%;
+            height: 500px;
+            top: 185px;
+            border: 2px solid #ffdd00;
+            display: flex;
+            justify-content: left;
+        }
+        #about_info>section{
+            position: relative;
+            height: 500px;
+            border: 2px solid #f87389;
+            margin: 0;
+        }
+        #about_info>section:nth-child(1){
+            width: 45%;
+        }
+        #about_info>section:nth-child(1){
+            width: 35%;
+        }
+        #personal_info{
+            left: 10%;
+        }
+        #experience{
+            left: 50%;
+        }
+        #personal_info>section{
+            position: relative;
+            border: 2px solid #930983;
+            display: inline-block;
+            height: 35%;
+            width: 48%;
+        }
+        #personal_info>section:nth-child(1){
+
+        }
+        #info_column_01{
+
+        }
+        #info_column_02{
+            left: 50%;
+        }
+        .info_heading{
+            color: #BBBBBB;
+            display: inline;
+        }
+        .info_detail{
+            display: inline;
+        }
+        .info{
+            position: relative;
+            width: 100%;
+            padding-top: 10px;
+        }
+        .info>p{
+            font-size: 15px;
+        }
+
+        #experience{
+            width: 30%;
+        }*/
+
+        .button_A{
+            position: relative;
+            background-color: transparent;
+            left: 60px;
+            width: 220px;
+            height: 55px;
+            border: 1px solid #ffbf00;
+            border-radius: calc(55px/2);
+            text-decoration: none;
+            padding: 17px 90px 17px 120px;
+            cursor: pointer;
+            overflow: hidden;
+        }
+        .button_A::before{
+            background-color: #ffbf00;
+            content: "";
+            position: absolute;
+            top: -1px;
+            right: 0;
+            width: 53.5px;
+            height: 53.5px;
+            border-radius: calc(53.5px/2);
+            transition-property: width;
+            transition-duration: 0.5s;
+        }
+        .button_A:hover::before{
+            width: 210px;
+            transition-property: width;
+            transition-duration: 0.5s;
+        }
+        .button_A>span{
+            position: absolute;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            width: 130px;
+            font-weight: 600;
+            font-size: 15px;
+            top: 19px;
+            left: 25px;
+            transition-property: width;
+            transition-duration: 0.5s;
+        }
+        .button_A>i{
+            position: absolute;
+            color: white;
+            font-size: 18px;
+            top: 17px;
+            right: 17px;
+        }
+
 
         /*Footer*/
         footer{
@@ -296,25 +431,92 @@
     <!--ABOUT-->
     <section id="about">
         <h1>About Me</h1>
-        <section>
-            <section>
+        <section id="about_info">
+            <section id="personal_info">
                 <h3>Personal Info</h3>
-                <pre>
-                    First Name: Ramindu     Last Name: Abeygunawardane
-                    Age: 21 Years           Nationality: Sri Lankan
-                    Freelance: Available    Address: Galle
-                    Phone: +94769807626     Email: raminduanjana@gmail.com
-                    Skype: ramindu.abey     Languages: English, Sinhalese
-                </pre>
+                <section id="info_column_01">
+                    <section class="info">
+                        <p class="info_heading">First Name:</p>
+                        <p class="info_detail">Ramindu</p>
+                    </section>
+                    <section class="info">
+                        <p class="info_heading">Age: </p>
+                        <p class="info_detail">21 Years</p>
+                    </section>
+                    <section class="info">
+                        <p class="info_heading">Freelance: </p>
+                        <p class="info_detail">Available</p>
+                    </section>
+                    <section class="info">
+                        <p class="info_heading">Phone: </p>
+                        <p class="info_detail">+94769807626</p>
+                    </section>
+                    <section class="info">
+                        <p class="info_heading">Skype: </p>
+                        <p class="info_detail">ramindu.abey</p>
+                    </section>
+                </section>
+                <section id="info_column_02">
+                    <section class="info">
+                        <p class="info_heading">Last Name: </p>
+                        <p class="info_detail">Abeygunawardane</p>
+                    </section>
+                    <section class="info">
+                        <p class="info_heading">Nationality: </p>
+                        <p class="info_detail">Sri Lankan</p>
+                    </section>
+                    <section class="info">
+                        <p class="info_heading">Address: </p>
+                        <p class="info_detail">Galle</p>
+                    </section>
+                    <section class="info">
+                        <p class="info_heading">Email: </p>
+                        <p class="info_detail">raminduanjana@gmail.com</p>
+                    </section>
+                    <section class="info">
+                        <p class="info_heading">Languages: </p>
+                        <p class="info_detail">English, Sinhalese</p>
+                    </section>
+                </section>
+                <a class="button_A" id="download_cv"><span>DOWNLOAD CV</span><i class="fa-solid fa-download"></i></a>
             </section>
-            <section>
+            <section id="experience">
 
             </section>
         </section>
-        <section>
+        <section id="skills">
             <h1>My Skills</h1>
             <section>
-
+                <img src="" alt="">
+                <p></p>
+            </section>
+            <section>
+                <img src="" alt="">
+                <p></p>
+            </section>
+            <section>
+                <img src="" alt="">
+                <p></p>
+            </section>
+            <section>
+                <img src="" alt="">
+                <p></p>
+            </section>
+            <section>
+                <img src="" alt="">
+                <p></p>
+            </section>
+            <section>
+                <img src="" alt="">
+                <p></p>
+            </section>
+            <section>
+                <img src="" alt="">
+                <p></p>
+            </section>
+            <section>
+                <img src="" alt="">
+                <p></p>
             </section>
         </section>
     </section>
@@ -425,7 +627,7 @@
                     <!--<label for="txtMessage">YOUR MESSAGE</label>-->
                     <textarea id="txtMessage" type="text" placeholder="YOUR MESSAGE"></textarea><br><br>
 
-                    <button>SEND MESSAGE</button>
+                    <a class="button_A" id="send_message"><span>SEND MESSAGE</span><i class="fa-solid fa-paper-plane"></i></a>
                 </fieldset>
             </form>
         </section>
