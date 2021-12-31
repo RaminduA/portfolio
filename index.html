@@ -176,18 +176,19 @@
         }
 
         #main_body{
-            background-color: /*#343a40*/#282727;
+            /*background-color: !*#343a40*!#282727;*/
             position: relative;
+            margin: 0;
+            overflow: hidden;
         }
         #main_body>section{
-            background-color: /*#343a40*/#282727;
             position: relative;
             width: 99.6vw;
+            margin: 0;
         }
 
         /*Home*/
         #home{
-            position: relative;
             height: 101vh;
             background-image: url("assets/background/home.jpg");
             background-size: cover;
@@ -222,6 +223,14 @@
             line-height: 28px;
         }
 
+
+        #about{
+            background-color: #ffc800;
+            color: white;
+            margin: 0;
+            height: 200vh;
+            font-family: 'Roboto', sans-serif;
+        }
         /*#about{
             position: relative;
             background-color: #161A1D;
@@ -306,7 +315,6 @@
         .button_A{
             position: relative;
             background-color: transparent;
-            left: 60px;
             width: 220px;
             height: 55px;
             border: 1px solid #ffbf00;
@@ -321,7 +329,7 @@
             content: "";
             position: absolute;
             top: -1px;
-            right: 0;
+            right: -1px;
             width: 53.5px;
             height: 53.5px;
             border-radius: calc(53.5px/2);
@@ -329,7 +337,7 @@
             transition-duration: 0.5s;
         }
         .button_A:hover::before{
-            width: 210px;
+            width: 211px;
             transition-property: width;
             transition-duration: 0.5s;
         }
@@ -353,6 +361,174 @@
             right: 17px;
         }
 
+
+
+        #contact{
+            height: 101vh;
+            background-color: #1c1c1c;
+        }
+        #contact>h1{
+            position: relative;
+            color: rgba(255, 255, 255, 0.85);
+            display: inline-block;
+            margin: 0;
+            top: 120px;
+            left: 450px;
+            font-size: 60px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            z-index: 4;
+        }
+        #contact>section{
+            position: relative;
+            width: 80%;
+            height: 60%;
+            left: 10%;
+            top: 145px;
+            display: flex;
+            justify-content: stretch;
+        }
+        #contact>section>section{
+            margin: 0;
+        }
+        #contact_info{
+            width: 40%;
+        }
+        #contact_info>h3{
+            position: relative;
+            color: white;
+            display: inline-block;
+            margin: 0;
+            top: 20px;
+            left: 10px;
+            font-size: 25px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: normal;
+        }
+        #contact_info>p{
+            position: relative;
+            color: white;
+            display: inline-block;
+            width: 80%;
+            margin: 0;
+            top: 45px;
+            left: 10px;
+            font-size: 17px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: normal;
+        }
+        #contact_info>section{
+            position: relative;
+            display: flex;
+            width: 85%;
+            height: 50%;
+            margin: 0;
+            top: 65px;
+            left: 10px;
+            flex-direction: column;
+        }
+        #contact_info>section>div{
+            position: relative;
+            flex-grow: 1;
+        }
+        #contact_info i{
+            position: absolute;
+            color: #ffc800;
+            margin: auto;
+            top: 28%;
+            left: 15px;
+            font-size: 30px;
+        }
+        #contact_info h4{
+            position: relative;
+            color: #c9c8c8;
+            margin: 0;
+            top: 20%;
+            left: 65px;
+            font-size: 16px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: normal;
+        }
+        #contact_info h5{
+            position: relative;
+            color: white;
+            display: inline-block;
+            margin: 0;
+            width: 80%;
+            top: 20%;
+            left: 65px;
+            padding-top: 8px;
+            font-size: 15px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: normal;
+            line-height: 18px;
+        }
+        #contact_info a{
+            color: white;
+            text-decoration: none;
+        }
+        #message_form{
+            position: relative;
+            top: 20px;
+        }
+        #message_form>form{
+            position: relative;
+            width: 40vw;
+        }
+        #message_form>form>section{
+            position: relative;
+            width: calc(110% + 62px);
+            display: flex;
+        }
+        #message_form form div {
+            position: relative;
+            margin: 0;
+            padding: 0 15px;
+        }
+        #message_form form>div {
+            width: calc(110% + 30px);
+        }
+        #message_form form>section>div {
+            position: relative;
+            margin: 0;
+            width: 50%;
+        }
+        #message_form form input {
+            background-color: #2b2b2b;
+            border: 1px solid #1c1c1c;
+            transition: .3s;
+            margin: 0;
+            width: calc(100% - 52px);
+            padding: 11px 26px;
+            border-radius: 30px;
+            font-size: 14px;
+            line-height: 2;
+            font-family: 'Roboto', sans-serif;
+            font-weight: normal;
+        }
+        #message_form form input:focus {
+            border: 1px solid #ffc800;
+            transition: .3s;
+        }
+        #message_form textarea {
+            background-color: #2b2b2b;
+            border: 1px solid #1c1c1c;
+            margin: 0;
+            width: calc(100% - 52px);
+            height: 220px;
+            padding: 11px 26px;
+            resize: vertical;
+            border-radius: 30px;
+            font-size: 14px;
+            line-height: 2;
+            font-family: 'Roboto', sans-serif;
+            font-weight: normal;
+        }
+        #send_message{
+            position: relative;
+            left: 26px;
+            top: 30px;
+        }
 
         /*Footer*/
         footer{
@@ -586,52 +762,53 @@
     </section>
     <!--CONTACT-->
     <section id="contact">
-        <hr>
+        <h1>GET IN TOUCH</h1>
         <section>
-            <h1>Contact</h1>
-            <h3>DON'T BE SHY</h3>
-            <h5><pre>
-                Feel free to get in touch with me. I am always open
-                to discussing new projects, creative ideas or
-                opportunities to be part of your visions.
-            </pre></h5>
-            <section>
-                <img src="" alt="">
-                <h4>ADDRESS POINT</h4>
-                <h5><pre>
-                    AbhayaSewana, Rosewood,
-                    Batuwantudawa, Hapugala,
-                    Galle, Sri Lanka.
-                </pre></h5>
+            <section id="contact_info">
+                <h3>DON'T BE SHY !</h3>
+                <p>
+                    Feel free to get in touch with me. I am always open
+                    to discussing new projects, creative ideas or
+                    opportunities to be part of your visions.
+                </p>
+                <section>
+                    <div>
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <h4>ADDRESS POINT</h4>
+                        <h5>AbhayaSewana, Rosewood, Batuwantudawa, Hapugala, Galle, Sri Lanka.</h5>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                        <h4>MAIL ME</h4>
+                        <h5><a href="mailto: raminduanjana@gmail.com">raminduanjana@gmail.com</a></h5>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-square-phone"></i>
+                        <h4>CALL ME</h4>
+                        <h5><a href="tel:+94769807626">+94 76 980 7626</a></h5>
+                    </div>
+                </section>
             </section>
-            <section>
-                <img src="" alt="">
-                <h4>MAIL ME</h4>
-                <h5><pre><a href="mailto: raminduanjana@gmail.com">raminduanjana@gmail.com</a></pre></h5>
-            </section>
-            <section>
-                <img src="" alt="">
-                <h4>CALL ME</h4>
-                <h5><pre><a href="tel:+94769807626">+94 76 980 7626</a></pre></h5>
-            </section>
-        </section>
-        <section>
-            <form action="">
-                <fieldset>
-                    <!--<label for="txtName">YOUR NAME</label>-->
-                    <input id="txtName" type="text" placeholder="YOUR NAME">
-                    <!--<label for="txtEmail">YOUR EMAIL</label>-->
-                    <input id="txtEmail" type="text" placeholder="YOUR EMAIL"><br><br>
-                    <!--<label for="txtSubject">YOUR SUBJECT</label>-->
-                    <input id="txtSubject" type="text" placeholder="YOUR SUBJECT"><br><br>
-                    <!--<label for="txtMessage">YOUR MESSAGE</label>-->
-                    <textarea id="txtMessage" type="text" placeholder="YOUR MESSAGE"></textarea><br><br>
-
+            <section id="message_form">
+                <form action="">
+                    <section>
+                        <div>
+                            <label for="txtName"></label><input id="txtName" type="text" placeholder="YOUR NAME">
+                        </div>
+                        <div>
+                            <label for="txtEmail"></label><input id="txtEmail" type="text" placeholder="YOUR EMAIL"><br><br>
+                        </div>
+                    </section>
+                    <div>
+                        <label for="txtSubject"></label><input id="txtSubject" type="text" placeholder="YOUR SUBJECT"><br><br>
+                    </div>
+                    <div>
+                        <label for="txtMessage"></label><textarea id="txtMessage" type="text" placeholder="YOUR MESSAGE"></textarea><br><br>
+                    </div>
                     <a class="button_A" id="send_message"><span>SEND MESSAGE</span><i class="fa-solid fa-paper-plane"></i></a>
-                </fieldset>
-            </form>
+                </form>
+            </section>
         </section>
-        <hr>
     </section>
 </main>
 <!--Left Side-->
