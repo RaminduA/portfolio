@@ -71,7 +71,7 @@
             right: 10px;
         }
 
-
+        /*Left Side*/
         #left_side{
             position: fixed;
             left: 40px;
@@ -361,6 +361,169 @@
             right: 17px;
         }
 
+        /*Projects*/
+        #projects{
+            height: 101vh;
+            background-image: url("assets/background/project-01.jpg");
+            background-size: cover;
+        }
+
+        /*Testimonials*/
+        #testimonials{
+            height: 101vh;
+            background-image: url("assets/background/testimonials.jpg");
+            background-size: cover;
+        }
+
+        /*Blog*/
+        #blog{
+            position: relative;
+            background-color: #161616;
+            height: 101vh;
+        }
+        #blog>h1{
+            position: relative;
+            color: rgba(255, 255, 255, 0.85);
+            display: inline-block;
+            margin: 0;
+            top: 100px;
+            left: 350px;
+            font-size: 55px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: normal;
+            z-index: 4;
+        }
+        #blog>section{
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            height: 58%;
+            width: 70%;
+            margin: 0;
+            top: 145px;
+            left: 15%;
+        }
+        .blog_box{
+            position: relative;
+            display: inline-block;
+            width: 31%;
+            margin: 0;
+            transition-duration: 2s;
+        }
+        .blog_box>h2{
+            position: relative;
+            color: #828282;
+            margin: 0;
+            top: 50px;
+            padding-left: 30px;
+            width: 80%;
+            font-size: 17px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: normal;
+            z-index: -1;
+        }
+        .blog_box>h1{
+            position: relative;
+            color: white;
+            margin: 0;
+            top: 70px;
+            padding-left: 30px;
+            width: 80%;
+            font-size: 30px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: normal;
+            z-index: -1;
+            transition-duration: 2s;
+            transition-property: color;
+        }
+        .blog_box>p{
+            position: relative;
+            color: #a09f9f;
+            margin: 0;
+            top: 100px;
+            padding-left: 30px;
+            width: 80%;
+            font-size: 16px;
+            font-family: 'Roboto', sans-serif;
+            z-index: -1;
+        }
+        .blog_box>a{
+            position: absolute;
+            color: white;
+            margin: 0;
+            bottom: 20px;
+            padding-left: 35px;
+            font-size: 15px;
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            z-index: -1;
+        }
+        .blog_box:hover h2{
+            z-index: 2;
+            transition-duration: 2s;
+            transition-property: z-index;
+        }
+        .blog_box:hover h1{
+            z-index: 2;
+            transition-duration: 2s;
+            transition-property: z-index;
+        }
+        .blog_box>h1:hover{
+            color: #ffdd00;
+            transition-duration: .5s;
+            transition-property: color;
+        }
+        .blog_box:hover p{
+            z-index: 2;
+            transition-duration: 2s;
+            transition-property: z-index;
+        }
+        .blog_box:hover a{
+            z-index: 2;
+            transition-duration: 2s;
+            transition-property: z-index;
+        }
+        .blog_box>a:hover{
+            color: #ffdd00;
+            transition-duration: .5s;
+            transition-property: color;
+        }
+        .blog_box:nth-child(1){
+            background-image: url("assets/background/blog-01.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        .blog_box:nth-child(2){
+            background-image: url("assets/background/blog-02.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        .blog_box:nth-child(3){
+            background-image: url("assets/background/blog-03.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        .blog_box:hover{
+            background-image: none;
+            border: 1px solid #fff;
+            transition-duration: 3s;
+            transition-property: border, background-image;
+        }
+        #blog>section svg{
+            position: relative;
+            color: rgba(255, 255, 255, 0.85);
+            display: inline-block;
+            margin: 0;
+            top: 120px;
+            left: 350px;
+            font-size: 10px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            z-index: 4;
+        }
+        /*<path d="M15.3536 4.35355c.1952-.19526.1952-.51184 0-.7071L12.1716.464466c-.1953-.195262-.5119-.195262-.7071
+        0-.1953.195262-.1953.511845 0 .707104L14.2929 4l-2.8284 2.82843c-.1953.19526-.1953.51184 0 .7071.1952.19527.5118.19527.7071
+        0l3.182-3.18198zM0 4.5h15v-1H0v1z" fill="currentColor"></path>*/
 
         /*Contact*/
         #contact{
@@ -698,17 +861,14 @@
     </section>
     <!--PROJECTS-->
     <section id="projects">
-        <hr>
         <img src="" alt="">
         <section>
             <h1>Project Heading</h1>
             <a href="">See Project</a>
         </section>
-        <hr>
     </section>
     <!--EDUCATION-->
     <section id="education">
-        <hr>
         <section>
             <h1>Education & Experience</h1>
             <a download="" href="">Download Resume</a>
@@ -728,11 +888,9 @@
 
             </section>
         </section>
-        <hr>
     </section>
     <!--TESTIMONIALS-->
     <section id="testimonials">
-        <hr>
         <section>
             <h1><pre>
                 Creative & dedicated
@@ -743,22 +901,39 @@
         <section>
 
         </section>
-        <hr>
     </section>
     <!--BLOG-->
     <section id="blog">
-        <hr>
         <h1>Recent News</h1>
         <section>
-            <img src="" alt="">
+            <div class="blog_box">
+                <h2>December 27, 2020</h2>
+                <h1>Scent in the Voyages</h1>
+                <p>Let years seasons given two fowl above is itself shall third night female seasons you’re whales,
+                    unto had fowl Herb. Moving so. Said be fruitful first lights creeping deep void, lesser.</p>
+                <a href="#blog">Read more<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 8">
+                    <defs></defs></svg>
+                </a>
+            </div>
+            <div class="blog_box">
+                <h2>December 27, 2020</h2>
+                <h1>The Stone of the Flames</h1>
+                <p>Let years seasons given two fowl above is itself shall third night female seasons you’re whales,
+                    unto had fowl Herb. Moving so. Said be fruitful first lights creeping deep void, lesser.</p>
+                <a href="#blog">Read more<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 8">
+                    <defs></defs></svg>
+                </a>
+            </div>
+            <div class="blog_box">
+                <h2>December 27, 2020</h2>
+                <h1>Secrets of the Serpents</h1>
+                <p>Let years seasons given two fowl above is itself shall third night female seasons you’re whales,
+                    unto had fowl Herb. Moving so. Said be fruitful first lights creeping deep void, lesser.</p>
+                <a href="#blog">Read more<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 8">
+                    <defs></defs></svg>
+                </a>
+            </div>
         </section>
-        <section>
-            <img src="" alt="">
-        </section>
-        <section>
-            <img src="" alt="">
-        </section>
-        <hr>
     </section>
     <!--CONTACT-->
     <section id="contact">
@@ -828,7 +1003,6 @@
             <!--WhatsApp-->
             <li><a href="https://wa.me/94769807626?text=Hey Ramindu" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
         </ul>
-
     </nav>
     <section></section>
 </section>
