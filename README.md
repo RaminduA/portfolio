@@ -32,7 +32,6 @@
 
  ```
 
-![Portfolio Home](assets/homePage.png)
 
 ## Github Stats
 
