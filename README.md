@@ -3,7 +3,7 @@
 ![Github Banner](assets/banner.png)
 
 <br />
-<a href="http://raminduanjana.000webhostapp.com/" align="left" > Portfolio : raminduanjana.000webhostapp.com </a> 
+<a href="https://raminduanjana.000webhostapp.com/" align="left" > Portfolio : raminduanjana.000webhostapp.com </a> 
 <br />
 <a href="https://www.figma.com/file/322zdroA3Tf4AWf2oppVc2/My-Profile" align="left" > Mockup : figma.com/file/My-Profile </a> 
 <br />
