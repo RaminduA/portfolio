@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignments</title>
+    <link href="assets/icon/myIcon.png" rel="icon" sizes="any">
+    <link href="assets/style/normalize.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@483&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style/fontawesome_6.0.0/css/all.css">
+    <meta content="Ramindu, Scorpion, RAS" name="keywords">
+    <meta content="Testing" name="description">
+    <meta content="width=device-width initial-scale=1" name="viewport">
+    <meta charset="UTF-8">
+    <meta content="#2874A6" name="theme-color">
+
+    <style>
+        /*Header*/
+        header{
+            background-color: #161616;
+            position: fixed;
+            z-index: 10;
+            width: 100vw;
+            height: 100px;
+            top: 0;
+        }
+        header img{
+            color: white;
+            position: relative;
+            top: -2px;
+            width: 200px;
+        }
+        header ul{
+            position: absolute;
+            margin: 39px;
+            top: 0;
+            left: 175px;
+            list-style: none;
+        }
+        header ul li{
+            display: inline-block;
+            margin-right: 50px;
+        }
+        header ul li a{
+            position: relative;
+            display: inline;
+            margin: 0;
+            color: white;
+            font-size: 15px;
+            font-family: /*'Roboto'*/'Raleway', sans-serif;
+            transition-duration: 700ms;
+            transition-property: color;
+        }
+        header ul li a:hover{
+            cursor: pointer;
+            color: #ffc800;
+            transition-duration: 700ms;
+            transition-property: color;
+        }
+        header a{
+            position: absolute;
+            margin: 40px;
+            cursor: pointer;
+            color: white;
+            font-size: 18px;
+            display: inline;
+            text-decoration: none;
+            top: 0;
+            right: 10px;
+        }
+        header>a{
+            font-family: 'Signika', sans-serif;
+        }
+
+        /*Left Side*/
+        #left_side{
+            position: fixed;
+            left: 40px;
+            top: 0;
+            height: 100%;
+            padding: 5rem 0;
+            width: 70px;
+        }
+        #left_side nav{
+            position: absolute;
+            top: 100px;
+            bottom: 250px;
+            width: 30px;
+            left: -15px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+        }
+        #left_side nav ul{
+            position: absolute;
+            list-style: none;
+            height: 33vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        #left_side nav ul li{
+            position: relative;
+            height: calc(100%/6);
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+        #left_side nav ul li a{
+            color: white;
+            font-size: 27px;
+            transition-duration: 700ms;
+            transition-property: color;
+        }
+        #left_side nav ul li a:hover{
+            cursor: pointer;
+            color: #ffc800;
+            transition-duration: 700ms;
+            transition-property: color;
+        }
+        #left_side>section{
+            background-color: rgba(255,255,255,.4);
+            position: relative;
+            left: 36px;
+            width: 1.5px;
+            height: 20%;
+        }
+        #left_side>section:nth-child(1){
+            top: 3vh;
+        }
+        #left_side>section:nth-child(3){
+            top: 38.5vh;
+        }
+
+        #right_side{
+            position: fixed;
+            z-index: 75;
+            top: 52%;
+            right: 3.575rem;
+            width: 2px;
+            height: 30.125rem;
+            -webkit-transform: translate(0,-50%);
+            -ms-transform: translate(0,-50%);
+            transform: translate(0,-50%);
+            border-radius: 0.3125rem;
+            background-color: white;
+        }
+        #right_side span {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            display: block;
+            height: 100%;
+            -webkit-transition: -webkit-transform 1s;
+            transition: -webkit-transform 1s;
+            transition: transform 1s,-webkit-transform 1s;
+            -webkit-transform: scaleY(0);
+            -ms-transform: scaleY(0);
+            transform: scaleY(0);
+            -webkit-transform-origin: top;
+            -ms-transform-origin: top;
+            transform-origin: top;
+            border-radius: 0.3125rem;
+            background-color: #ffc800/*#cf000f*/;
+        }
+
+        body::-webkit-scrollbar {
+            width: 7px;
+        }
+        body::-webkit-scrollbar-track {
+            background: #161616;
+        }
+        body::-webkit-scrollbar-thumb {
+            background-color: #ffc800;
+            border-radius: 20px;
+            border: 1px solid #161616;
+        }
+
+        main{
+            background-color: #282727;
+        }
+
+        .title{
+            color: white;
+            font-size: 50px;
+            margin-top: 100px;
+            margin-bottom: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Roboto", sans-serif;
+
+        }
+        #assignment{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding-bottom: 100px;
+        }
+        div{
+            display: inline;
+        }
+        a{
+            color: #FFFFFF;
+            text-decoration: none;
+            font-family: "Signika", sans-serif;
+        }
+        div img{
+            width: 29vw;
+            margin: 20px;
+            margin-bottom: 40px;
+        }
+        a:visited{
+            color: white;
+        }
+        a:hover{
+            color: yellow;
+        }
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+            font-size: 28px;
+            padding-bottom: 5px;
+        }
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /*Footer*/
+        footer{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100vw;
+            height: 100px;
+            z-index: 10;
+        }
+        footer p{
+            position: absolute;
+            color: white;
+            margin: 39px;
+            left: 20px;
+            font-size: 15px;
+            font-family: 'Roboto', sans-serif;
+        }
+        footer ul{
+            position: absolute;
+            margin: 39px 5px 39px 5px;
+            top: 0;
+            right: 35px;
+            list-style: none;
+        }
+        footer ul li{
+            display: inline-block;
+            margin-right: 20px;
+            color: white;
+            font-size: 15px;
+            font-family: 'Raleway', sans-serif;
+            transition-duration: 700ms;
+            transition-property: color;
+        }
+        footer ul li:hover{
+            cursor: pointer;
+            color: #ffc800;
+            transition-duration: 700ms;
+            transition-property: color;
+        }
+    </style>
+</head>
+<body>
+<!--Header-->
+<header>
+    <section>
+        <img src="assets/logo/ramindu.png" alt="">
+        <map name="">
+            <area shape="" coords="" href="" alt="">
+        </map>
+    </section>
+    <nav>
+        <ul>
+            <li><a href="index.html/#home">HOME</a></li>
+            <li><a href="index.html/#about">ABOUT</a></li>
+            <li><a href="index.html/#projects">PROJECTS</a></li>
+            <li><a href="index.html/#education">EDUCATION</a></li>
+            <li><a href="index.html/#testimonials">TESTIMONIALS</a></li>
+            <li><a href="index.html/#blog">BLOG</a></li>
+            <li><a href="index.html/#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+    <a href="tel:+94769807626">+94 76 980 7626</a>
+</header>
+<!--Main Body-->
+<main>
+    <section id="assignment">
+        <p class="title">CSS Assignments</p>
+        <section>
+            <div class="container">
+                <img src="assets/assignments/assignment-01.png">
+                <a href="myprojects/CSS/Layouts/Case_01/index.html"  target="_blank"> <div class="centered">Assignment 01</div></a>
+            </div>
+            <div class="container">
+                <img src="assets/assignments/assignment-02.png">
+                <a href="myprojects/CSS/Layouts/Case_02/index.html" target="_blank"> <div class="centered">Assignment 02</div></a>
+            </div>
+            <div class="container">
+                <img src="assets/assignments/assignment-03.png">
+                <a href="myprojects/CSS/Layouts/Case_03/index.html" target="_blank"> <div class="centered">Assignment 03</div></a>
+            </div>
+            <div class="container">
+                <img src="assets/assignments/assignment-04.png">
+                <a href="myprojects/CSS/Layouts/Case_04/index.html" target="_blank"> <div class="centered">Assignment 04</div></a>
+            </div>
+            <div class="container">
+                <img src="assets/assignments/assignment-05.png">
+                <a href="myprojects/CSS/Transitions/Case_01/index.html" target="_blank"> <div class="centered">Assignment 05</div></a>
+            </div>
+            <div class="container">
+                <img src="assets/assignments/assignment-06.png">
+                <a href="myprojects/CSS/Transitions/Case_02/index.html" target="_blank"> <div class="centered">Assignment 06</div></a>
+            </div>
+            <div class="container">
+                <img src="assets/assignments/assignment-07.png">
+                <a href="myprojects/CSS/Animations/Case_01/index.html" target="_blank"> <div class="centered">Assignment 07</div></a>
+            </div>
+            <div class="container">
+                <img src="assets/assignments/assignment-08.png">
+                <a href="myprojects/CSS/Animations/Case_02/index.html" target="_blank"> <div class="centered">Assignment 08</div></a>
+            </div>
+            <div class="container">
+                <img src="assets/assignments/assignment-09.png">
+                <a href="myprojects/CSS/Animations/Case_03/index.html" target="_blank"> <div class="centered">Assignment 09</div></a>
+            </div>
+            <div class="container">
+                <img src="assets/assignments/assignment-10.png">
+                <a href="myprojects/CSS/Animations/Case_04/index.html" target="_blank"> <div class="centered">Assignment 10</div></a>
+            </div>
+        </section>
+
+    </section>
+</main>
+<!--Left Side-->
+<section id="left_side">
+    <section></section>
+    <nav>
+        <ul>
+            <!--Instagram-->
+            <li><a href="https://www.instagram.com/_r.a.m.i.n.d.u_/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <!--GitHub-->
+            <li><a href="https://github.com/RaminduA" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+            <!--LinkedIn-->
+            <li><a href="https://lk.linkedin.com/in/ramindu-abeygunawardane-ab206a213" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <!--Facebook-->
+            <li><a href="https://www.facebook.com/RAS7262344/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <!--Twitter-->
+            <li><a href="https://twitter.com/RaminduAbey" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+            <!--WhatsApp-->
+            <li><a href="https://wa.me/94769807626?text=Hey Ramindu" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+        </ul>
+    </nav>
+    <section></section>
+</section>
+<!--Right Side-->
+<div id="right_side">
+    <!--Styled Scroll Bar & Progress Bar-->
+    <span style="transform: scaleY(0.125);"></span>
+</div>
+<!--Footer-->
+<footer>
+    <!--Copy Rights-->
+    <p>©Scorpion. 2021</p>
+    <nav>
+        <ul>
+            <li>ENG</li>
+            <li>FRE</li>
+            <li>SPA</li>
+        </ul>
+    </nav>
+</footer>
+</body>
+</html>
