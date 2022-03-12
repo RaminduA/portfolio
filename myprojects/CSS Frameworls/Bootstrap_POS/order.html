@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap POS System</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+    <link href="assets/styles/style.css" rel="stylesheet">
+</head>
+<body>
+<nav class="container-fluid">
+    <section class="row bg-success">
+        <div class="col-2 navbar">
+            <a class="navbar-brand text-white" href="#">POS System</a>
+        </div>
+        <div class="col navbar bg-white bg-opacity-10">
+
+        </div>
+    </section>
+</nav>
+<main class="container-fluid">
+    <section class="row">
+        <nav class="col-2 navbar bg-dark">
+            <ul class ="nav nav-pills flex-column mb-auto">
+                <li>
+                    <a class ="nav-link text-white" href="index.html"><i class="fa-solid fa-gauge text-white"></i> Dashboard </a>
+                </li>
+                <li class ="nav-item">
+                    <a class ="nav-link text-white" href="#"><i class="fa-solid fa-file-lines text-white"></i> Invoices </a>
+                </li>
+                <li class ="nav-item">
+                    <a class ="nav-link text-white" href="item.html"><i class="fa-solid fa-box-archive text-white"></i> Items </a>
+                </li>
+                <li class ="nav-item">
+                    <a class ="nav-link text-white" href="customer.html"><i class="fa-solid fa-users text-white"></i> Customers </a>
+                </li>
+                <li class ="nav-item">
+                    <a class ="nav-link text-white" href="order.html"><i class="fa-solid fa-cart-flatbed text-white"></i> Orders </a>
+                </li>
+            </ul>
+        </nav>
+        <section id="page" class="col">
+            <section id="orderContent">
+                <div class="12 grid-margin">
+                    <div class="row">
+                        <div class="col-md-4 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <form class="forms-sample">
+                                        <div class="row form-group">
+                                            <label for="" class="col-sm-3 col-form-label">Order ID</label>
+                                            <div class="col-sm-9">
+                                                <input placeholder="O-0001" type="text" class="form-control form-control">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <form class="forms-sample">
+                                        <div class="row form-group">
+                                            <label for="" class="col-sm-3 col-form-label">Date</label>
+                                            <div class="col-sm-9">
+                                                <input class="form-control" id="txtDate" type="date">
+                                            </div>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Customer Details</h4>
+                                    <form class="forms-sample"><div class="row form-group">
+                                        <label for="" class="col-sm-3 col-form-label">ID</label>
+                                        <div class="col-sm-9">
+                                            <input placeholder="C0001" type="text" class="form-control form-control">
+                                        </div>
+                                    </div>
+                                        <div class="row form-group">
+                                            <label for="" class="col-sm-3 col-form-label">Name</label>
+                                            <div class="col-sm-9">
+                                                <input placeholder="Amal" type="text" class="form-control form-control">
+                                            </div>
+                                        </div>
+                                        <div class="row form-group">
+                                            <label for="" class="col-sm-3 col-form-label">Address</label>
+                                            <div class="col-sm-9">
+                                                <input placeholder="Galle" type="text" class="form-control form-control">
+                                            </div>
+                                        </div>
+                                        <div class="row form-group">
+                                            <label for="" class="col-sm-3 col-form-label">Salary</label>
+                                            <div class="col-sm-9">
+                                                <input placeholder="50000.00" type="text" class="form-control form-control">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Item Details</h4>
+                                    <form class="forms-sample"><div class="row form-group">
+                                        <label for="" class="col-sm-3 col-form-label">ID</label>
+                                        <div class="col-sm-9">
+                                            <input placeholder="I001" type="text" class="form-control form-control">
+                                        </div>
+                                    </div>
+                                        <div class="row form-group">
+                                            <label for="" class="col-sm-3 col-form-label">Name</label>
+                                            <div class="col-sm-9">
+                                                <input placeholder="Item01" type="text" class="form-control form-control">
+                                            </div>
+                                        </div>
+                                        <div class="row form-group">
+                                            <label for="" class="col-sm-3 col-form-label">Unit Price</label>
+                                            <div class="col-sm-9">
+                                                <input placeholder="50.00" type="text" class="form-control form-control">
+                                            </div>
+                                        </div>
+                                        <div class="row form-group">
+                                            <label for="" class="col-sm-3 col-form-label">Qty On Hand</label>
+                                            <div class="col-sm-9">
+                                                <input placeholder="40" type="text" class="form-control form-control">
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row form-group">
+                                            <label for="" class="col-sm-3 col-form-label">Quantity</label>
+                                            <div class="col-sm-4">
+                                                <input placeholder="00" type="text" class="form-control form-control">
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <button class="btn btn-success mt-3" id="btnSubmitOrder" type="button">Add Item</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <section class="content-box-2 p-4 ">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <span class="" id="total-text">Total : </span>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <span id="total">00.0</span> Rs/=
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <span id="total-text1">SubTotal : </span>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <span id="subtotal">00.0</span> Rs/=
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-6 mt-2">
+                                                <div class="form-group">
+                                                    <label>Cash</label>
+                                                    <input class="form-control" id="txtCash" min="0" type="number">
+                                                    <span class="control-error" id="cash-empty-error"></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 mt-2">
+                                                <div class="form-group">
+                                                    <label>Discount</label>
+                                                    <input class="form-control" id="txtDiscount" min="0" type="number">
+                                                </div>
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="form-group">
+                                                    <label>Balance</label>
+                                                    <input class="form-control" id="txtBalance" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <button class="btn btn-success mt-3" id="" type="button">Purchase</button>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div  class="row">
+                        <div class="col-md-12 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover">
+                                            <thead class="bg-dark text-white">
+                                            <tr>
+                                                <th>Item Code</th>
+                                                <th>Item Name</th>
+                                                <th>Price</th>
+                                                <th>Quantity</th>
+                                                <th>Total</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody id="orderTable">
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+</main>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
