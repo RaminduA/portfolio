@@ -18,7 +18,11 @@ function changeColour(){
     for(var i=0; i<7; i++){
         $(blocks[i]).css('background',"white");
     }
-    $(blocks[index]).css('background',"red");
+    $(blocks[index-2]).css('background',"#ff0707");
+    $(blocks[index-1]).css('background',"#d00202");
+    $(blocks[index]).css('background',"#aa0404");
+    $(blocks[index+1]).css('background',"#d00202");
+    $(blocks[index+2]).css('background',"#ff0707");
     if(round%2==0){
         index++;
     }else{

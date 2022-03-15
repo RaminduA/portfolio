@@ -14,7 +14,7 @@ h1{
     display: inline-block;
     margin: 0;
     top: 50px;
-    left: 45%;
+    left: 42%;
     color: white;
     font-family: 'Poppins', sans-serif;
 }
@@ -82,4 +82,25 @@ div>section{
 }
 #b6{
     background-color: blue;
+}
+
+#btnStart{
+    position: relative;
+    background: white;
+    font-weight: bold;
+    font-size: 20px;
+    width: 100px;
+    height: 35px;
+    top: 60%;
+    right: 32%
+}
+#btnStop{
+    position: relative;
+    background: white;
+    font-weight: bold;
+    font-size: 20px;
+    width: 100px;
+    height: 35px;
+    top: 60%;
+    right: 27%
 }

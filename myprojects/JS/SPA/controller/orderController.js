@@ -189,6 +189,7 @@ $('#btnPurchaseOrder').click(function () {
     setTotalPurchase();
     clearAllOrderFields();
     loadAllCartObjects();
+    loadAllItems();
     setOrderButtons();
 });
 

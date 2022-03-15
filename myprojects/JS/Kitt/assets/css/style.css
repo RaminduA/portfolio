@@ -42,27 +42,38 @@ h1{
     width: calc(100% - 20px);
     background-color: #FFFFFF;
 }
-/*#b1{
-    background-color: #FFFF00;
+#btnStart{
+    position: relative;
+    background: white;
+    font-weight: bold;
+    font-size: 20px;
+    width: 100px;
+    height: 35px;
+    top: 55%;
+    right: 32%
+}
+#btnStop{
+    position: relative;
+    background: white;
+    font-weight: bold;
+    font-size: 20px;
+    width: 100px;
+    height: 35px;
+    top: 55%;
+    right: 27%
 }
 #b2{
-    background-color: #FFBFCC;
+    background-color: #ff0707;
 }
 #b3{
-    background-color: #EE82EF;
+    background-color: #d00202;
 }
 #b4{
-    background-color: #FE0000;
+    background-color: #aa0404;
 }
 #b5{
-    background-color: #008001;
+    background-color: #d00202;
 }
 #b6{
-    background-color: #0000FE;
-}
-#b7{
-    background-color: #0000FE;
-}*/
-#b4{
-    background-color: #FE0000;
+    background-color: #ff0707;
 }
