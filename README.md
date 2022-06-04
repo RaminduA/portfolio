@@ -1,4 +1,4 @@
-### Hey, I'm [Ramindu Abeygunawardane!](https://github.com/RaminduA)
+### Hey, I'm [Ramindu Abeygunawardane!](https://ramindua.github.io/MyProfile/)
 
 ![Github Banner](assets/banner.png)
 
