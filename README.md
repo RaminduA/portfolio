@@ -1,9 +1,7 @@
-### Hey, I'm [Ramindu Abeygunawardane!](https://ramindua.github.io/MyProfile/)
+### Hey, I'm [Ramindu Abeygunawardane](https://ramindua.github.io/portfolio/)!
 
 ![Github Banner](assets/banner.png)
 
-<br />
-<a href="https://raminduanjana.000webhostapp.com/" align="left" > Portfolio : raminduanjana.000webhostapp.com </a> 
 <br />
 <a href="https://www.figma.com/file/322zdroA3Tf4AWf2oppVc2/My-Profile" align="left" > Mockup : figma.com/file/My-Profile </a> 
 <br />
@@ -13,22 +11,76 @@
 <br />
 <br />
 
+<br />
+<br />
+
 ## Who am I?
 
  ```python
-  class WhoAmI:
-    user = 'Ramindu Abeygunawardane'
-	current_edu = ("IJSE", "University of Moratuwa")
-    currently_learning = {1:"Python", 2:"CSS", 3:"HTML"}
-    fun_fact = "I love Chillies"
-	hobbies = ['Music', 'Chilling', 'Gaming', 'Sci-Fi Movies']
-	
-	def getCity():
-		return Galle_SriLanka()
-	
-	def Ambitions():
-		BecomeEngineer()
-		FinishMyProjects()
+class WhoAmI:
+    username = 'Ramindu Abeygunawardane'
+    location = 'Galle, Sri Lanka'
+    current_education = {
+        'Institutes': ["IJSE", "University of Moratuwa"],
+        'Majors': ["Software Engineering", "Computer Science & Engineering (Data Science)"]
+    }
+    currently_learning = {
+        1: "C++",
+        2: "React Native",
+        3: "Dart/Flutter"
+    }
+    fun_fact = "Passion for Chillies 🌶️!"
+    hobbies = [
+        'Music 🎶',
+        'Chilling 😎',
+        'Coding 💻',
+        'Sci-Fi Movies 🎥'
+    ]
+
+    def get_city(self):
+        return "Galle, Sri Lanka"
+
+    def ambitions(self):
+        return [
+            "Become an Engineer",
+            "Do New Projects"
+        ]
+
+    def __str__(self):
+        profile = f"""
+        Username: {self.username}
+        Location: {self.location}
+
+        Education:
+        - Institutes: {", ".join(self.current_education['Institutes'])}
+        - Majors: {", ".join(self.current_education['Majors'])}
+
+        Currently Learning:
+        """
+        for key, value in self.currently_learning.items():
+            profile += f"  {key}. {value}\n"
+
+        profile += f"""
+        Fun Fact: {self.fun_fact}
+
+        Hobbies:
+        """
+        for hobby in self.hobbies:
+            profile += f"  - {hobby}\n"
+
+        profile += f"""
+        City: {self.get_city()}
+
+        Ambitions:
+        """
+        for ambition in self.ambitions():
+            profile += f"  - {ambition}\n"
+
+        return profile
+
+ramindu = WhoAmI()
+print(ramindu)
+
 
  ```
 
@@ -37,7 +89,6 @@
 
 <img src="https://github-readme-stats.vercel.app/api?username=RaminduA&&show_icons=true&count_private=true&theme=github_dark">|<img src="https://github-readme-streak-stats.herokuapp.com/?user=RaminduA&theme=blueberry_duo"/>
 |---|---|
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=RaminduA&layout=compact&theme=github_dark"/>|
 
 ## Programming Languages
 
@@ -55,18 +106,22 @@
 
 <p>
    <a href="#"><img alt="Hibernate" src="https://img.shields.io/badge/Hibernate-B2A573?logo=hibernate&logoColor=B2A573&color=black&labelColor=black"></a>
+   <a href="#"><img alt="React JS" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAF"></a>
+   <a href="#"><img alt="Express JS" src="https://img.shields.io/badge/Express%20js-000000?style=for-the-badge&logo=express&logoColor=white"></a>
 </p>
 
 ## Operating Systems
 
 <p>
 	<a href="#"><img alt="Windows" src="https://img.shields.io/badge/Windows-0078D6?logo=windows&logoColor=white"></a>
-	<a href="#"><img alt="Apple" src="https://img.shields.io/badge/Mac_Os-000000?logo=apple&logoColor=white"></a>
+	<a href="#"><img alt="Mac" src="https://img.shields.io/badge/Mac_Os-000000?logo=apple&logoColor=white"></a>
+	<a href="#"><img alt="Android" src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white"></a>
 </p>
 
 ## Databases and Cloud hosting
 
 <p>
+    <a href="#"><img alt="MySQL" src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white"></a>
     <a href="#"><img alt="GitHub Pages" src="https://img.shields.io/badge/GitHub%20Pages-%23327FC7.svg?logo=github&logoColor=white"></a>
     <a href="#"><img alt="Xampp" src="https://img.shields.io/badge/Xampp%20-%23430098.svg?logo=xampp&logoColor=white"></a>
 </p> 
@@ -79,40 +134,25 @@
     <a href="#"><img alt="Pycharm" src="https://img.shields.io/badge/PyCharm-143?logo=pycharm&logoColor=black&color=green&labelColor=green"></a>
 	<a href="#"><img alt="Jupyter Notebook" src="https://img.shields.io/badge/Jupyter_Notebook-white.svg?logo=Jupyter&logoColor="></a>
 	<a href="#"><img alt="Intellij" src="https://img.shields.io/badge/IntelliJ_IDEA-1D7CE5.svg?logo=intellij-idea&logoColor=black"></a>
+	<a href="#"><img alt="Canva" src="https://img.shields.io/badge/Canva-%2300C4CC.svg?&style=for-the-badge&logo=Canva&logoColor=white"></a>
+	<a href="#"><img alt="Figma" src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"></a>
 </p>
 
 ## Connect with Me
 
 <p align="center">
-  <a href="https://lk.linkedin.com/in/ramindu-abeygunawardane-ab206a213"><img alt="Linkedin" title="Ramindu Abeygunawardane Linkedin" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+  <a href="https://www.linkedin.com/in/Ramindu-Abeygunawardane"><img alt="Linkedin" title="Ramindu Abeygunawardane Linkedin" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
   <a href="https://github.com/RaminduA"><img alt="Github" title="Ramindu Abeygunawardane Github" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a>
-  <a href="https://www.facebook.com/RAS7262344/"><img alt="Facebook" title="Ramindu Abeygunawardane Facebook" src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white"></a>
+  <a href="https://www.facebook.com/RaminduA/"><img alt="Facebook" title="Ramindu Abeygunawardane Facebook" src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white"></a>
   <a href="https://www.instagram.com/_r.a.m.i.n.d.u_/"><img alt="Instagram" title="Ramindu Abeygunawardane Instagram" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
 </p>
 <p align="center">
   <a href="mailto:raminduanjana@gmail.com"><img alt="Gmail" title="Ramindu Abeygunawardane Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a>
   <a href="https://t.me/RaminduA"><img alt="Telegram" title="Ramindu Abeygunawardane Telegram" src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"></a> 
-  <a href="https://twitter.com/RaminduAbey"><img alt="Twitter" title="Ramindu Abeygunawardane Twitter" src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"></a>
+  <a href="https://x.com/RaminduAbey"><img alt="X" title="Ramindu Abeygunawardane X" src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=X&logoColor=white"></a>
 </p>
 
 &nbsp;
 
-
-<a href="https://github.com/RaminduA/Vocational_Training_System-Hibernate">
-    <img align="right" src="https://github-readme-stats.vercel.app/api/pin/?username=RaminduA&repo=Vocational_Training_System-Hibernate&theme=github_dark" />
-</a>
-
-<a href="https://github.com/RaminduA/Hibernate-POS-System">
-  <img align="left" src="https://github-readme-stats.vercel.app/api/pin/?username=RaminduA&repo=Hibernate-POS-System&theme=github_dark" />
-</a>
-
-<a href="https://github.com/RaminduA/CSS_Assignments">
-  <img align="right" src="https://github-readme-stats.vercel.app/api/pin/?username=RaminduA&repo=CSS_Assignments&theme=github_dark" />
-</a>
-
-<a href="https://github.com/RaminduA/MyProfile">
-  <img align="left" src="https://github-readme-stats.vercel.app/api/pin/?username=RaminduA&repo=MyProfile&theme=github_dark" />
-</a>
-
 -----
-Last Edited on: 07/01/2022
+Last Edited on: 13/09/2024
